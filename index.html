@@ -7,9 +7,75 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <nav></nav>
+    <nav class="navbar dark" id="navbar">
+      <a class="navbar-brand" href="#">a11y practice</a>
+      <ul class="nav-link-group">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Introduction</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">WCAG</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">POUR Principles</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Tools</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </nav>
+      
     <main>
-      <section id="hero"></section>
+      <div id="hero" class="dark">
+        <img src="assets/HeroIcon.svg" alt="">
+        <h1 >Accessible Web Design</h1>
+        <p>Explain the purpose of the web page here.</p>
+      </div>
+
+      <article>
+        <section id="introduction" class="light">
+          <div class="centered-textdiv">
+            <h2>Introduction to Web Accessibility</h2>
+            <p>Lorem ipsum dolor sit amet consectetur. Laoreet enim arcu vulputate nam aenean suscipit. Cursus et massa nulla porta gravida.</p>
+            <p>Give a brief summary about web accessibility here.</p>
+          </div>
+          <div id="photo-section-wrapper">
+            <span class="photosection">
+              <img src="assets/Photo1.png" alt="" id="photo1">
+              <div class="photo-text">
+                <h3>Why is web accessibility important?</h3>
+                <p>Lorem ipsum dolor sit amet consectetur. Ultrices scelerisque imperdiet semper fusce cursus sem sed. Non lectus tincidunt pellentesque etiam varius vulputate dolor. Et dui id commodo justo cras leo porta porttitor. Lacus a donec volutpat diam.</p>
+              </div>
+            </span>
+            <span class="photosection">
+              <div class="photo-text">
+                <h3>What are some common challenges for users?</h3>
+                <p>Lorem ipsum dolor sit amet consectetur. Ultrices scelerisque imperdiet semper fusce cursus sem sed. Non lectus tincidunt pellentesque etiam varius vulputate dolor. Et dui id commodo justo cras leo porta porttitor. Lacus a donec volutpat diam.</p>
+              </div>
+              <img src="assets/Photo2.png" alt="">
+            </span>
+          </div>
+        </section>
+
+        <section id="WCAG" class="dark">
+          <div class="centered-textdiv">
+            <img src="assets/WebAccessibility.svg" alt="">
+            <h2>What is WCAG?</h2>
+            <p>Explain what WCAG is here.</p>
+          </div>
+          <div class="WCAG-body">
+
+
+          </div>
+        </section>
+      </article>
+
     </main>
   </body>
 </html>
