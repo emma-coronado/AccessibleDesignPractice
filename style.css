@@ -280,6 +280,8 @@ a {
     align-self: stretch;
 }
 
+/* accordion styling */
+
 .accordion {
     display: flex;
     max-width: 1168px;
@@ -292,13 +294,13 @@ a {
 }
 
 .accordion-item {
+    border-bottom: 1px solid var(--Brand-Colors-Dark-Blue);
     display: flex;
     width: 1050px;
-    height: 72px;
-    padding: 21px 24px;
-    justify-content: space-between;
-    align-items: center;
-    flex-shrink: 0;
+    /* padding: 21px 24px; */
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
 }
 
 .accordion-header {
@@ -306,16 +308,6 @@ a {
 }
 
 .accordion-button {
-    display: flex;
-    max-width: 1050px;/*?*/
-    width: 75vw;/*?*/
-    padding: 21px 24px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-    justify-content: space-between;
-    align-self: stretch;
-
     font-family: "PT Sans";
     font-size: 24px;
     font-style: normal;
@@ -327,16 +319,22 @@ a {
     color: var(--Brand-Colors-Dark-Blue);
 
     border: none;
-    border-bottom: 1px solid var(--Brand-Colors-Dark-Blue);
+    padding: 0;
 
+    padding: 21px 24px;    
+    width: 1050px;
 }
 
 .accordion-button:hover {
     background-color: var(--Brand-Colors-Button-Hover-BG);
 }
 
+.accordion-button:open {
+
+}
+
 .accordion-title {
-    display: flex;
+display: flex;
 justify-content: space-between;
 align-items: flex-start;
 align-self: stretch;
@@ -345,6 +343,19 @@ align-self: stretch;
 .accordion-icon {
 
 }
+
+.accordion-content {
+    display: flex;
+    width: 1016px;
+    padding: 8px 58px 35px 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    display: none;
+    overflow: hidden;
+}
+
+/* last few sections */
 
 #tools-section {
     display: flex;

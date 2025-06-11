@@ -16,3 +16,30 @@ window.onscroll = () => {
     }
 };
 
+// accordion functionaliy
+document.addEventListener('DOMContentLoaded', function () {
+    const buttons = document.querySelectorAll('.accordion-button');
+
+    buttons.forEach (button => {
+        button.addEventListener('click', function() {
+            // Determine if this button is already expanded
+            const isExpanded = this.getAttribute('aria-expanded') === 'true';
+            
+            // Toggle the button's aria-expanded attribute
+            this.setAttribute('aria-expanded', String(!isExpanded));
+            
+            // Find related panel using the button's aria-controls attribute
+            const panelId = this.getAttribute('aria-controls');
+            const panel = document.getElementById(panelId);
+            
+            // Toggle panel's aria-hidden attribute
+            panel.setAttribute('aria-hidden', String(isExpanded));
+            
+            if (isExpanded) 
+                panel.style.display = 'none';
+            else
+                panel.style.display = 'block';
+            
+        });
+    });
+});
