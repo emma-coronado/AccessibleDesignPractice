@@ -1,4 +1,4 @@
-// navbar color change on scroll
+// navbar color/styling change on scroll
 window.onscroll = () => {
     const navbar = document.getElementById("navbar");
 
@@ -35,11 +35,16 @@ document.addEventListener('DOMContentLoaded', function () {
             // Toggle panel's aria-hidden attribute
             panel.setAttribute('aria-hidden', String(isExpanded));
             
-            if (isExpanded) 
-                panel.style.display = 'none';
-            else
-                panel.style.display = 'block';
-            
+            var chevron = this.getElementsByTagName("svg");
+
+            if (isExpanded) {
+                panel.style.display = 'none'; //expand panel
+                chevron[0].setAttribute('transform', 'scale(1, 1)'); // flip chevron
+            }
+            else {
+                panel.style.display = 'flex';
+                chevron[0].setAttribute('transform', 'scale(1, -1)');
+            }
         });
     });
 });
