@@ -391,12 +391,24 @@ align-self: stretch;
 
 #tools-section {
     display: flex;
-    padding: 64px 376px;
+    padding: 64px 20vw;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 48px;
     align-self: stretch;
+    flex-wrap: wrap;
+}
+
+/* card styling */
+
+#tool-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    align-self: stretch;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -408,6 +420,9 @@ align-self: stretch;
 
     border: 1px solid rgba(0, 38, 87, 0.30);
     background: #FFF;
+
+    max-width: 360px;
+    min-width: 300px;
 }
 
 .card-body {
@@ -429,6 +444,8 @@ align-self: stretch;
     align-self: stretch;
 }
 
+/* end card styling */
+
 #about-section {
     display: flex;
     padding: 64px 10px;
@@ -437,6 +454,38 @@ align-self: stretch;
     align-items: center;
     gap: 48px;
     align-self: stretch;
+}
+
+#about-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    align-self: stretch;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#about-card {
+    display: flex;
+    max-width: 1168px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
+}
+
+#headshot-placeholder {
+    height: 360px;
+    width: 360px;
+    max-width: 360px;
+    max-height: 360px;
+    /* flex: 1 0 0; */
+}
+
+#bio-text {
+
 }
 
 footer {
