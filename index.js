@@ -16,7 +16,7 @@ window.onscroll = () => {
     }
 };
 
-// accordion functionaliy
+// accordion functionality
 document.addEventListener('DOMContentLoaded', function () {
     const buttons = document.querySelectorAll('.accordion-button');
 

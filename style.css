@@ -128,21 +128,33 @@ a {
     font-weight: 700;
     line-height: normal;
     text-decoration: none;
+    padding-bottom: 2px;
 }
 
 .light a:hover {
     border-bottom: 2px solid var(--Brand-Colors-Dark-Blue);
+    padding-bottom: 0;
 }
 
 .dark a:hover {
     border-bottom: 2px solid var(--Brand-Colors-White);
+    padding-bottom: 0;
+}
+
+/* Prevent underline on hover for navbar-brand */
+.navbar-brand:hover {
+    border-bottom: none !important;
+}
+
+ul {
+    margin: 0;
 }
 
 /* Nav */
 
 #navbar {
     display: flex;
-    padding: 24px 96px;
+    padding: 24px 5vw;
     justify-content: space-between;
     align-items: center;
     align-content: space-between;
@@ -156,8 +168,8 @@ a {
     display: flex;
     align-items: center;
     gap: 10px;
-    border-bottom: none;
 }
+
 
 .nav-link-group {
     display: flex;
@@ -182,11 +194,12 @@ a {
 #hero {
     display: flex;
     min-height: 360px;
-    padding: 48px 0px;
+    padding: 48px 15vw;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 16px;
+    text-align: center;
 }
 
 
@@ -198,12 +211,14 @@ a {
     align-items: center;
     gap: 64px;
     align-self: stretch;
+    text-align: center;
+
 }
 
 
 .centered-textdiv {
     display: flex;
-    max-width: 1024px;
+    max-width: 53vw;
     flex-direction: column;
     align-items: center;
     gap: 8px;
@@ -222,10 +237,15 @@ a {
 
 .photosection {
     display: flex;
-    height: 540px;
-    min-height: 540px;
     align-items: flex-start;
     align-self: stretch;
+    height: 28vw;
+}
+
+.photosection img {
+    max-width: 100%;
+    height: 100%;
+    display: block;
 }
 
 .photo-text {
@@ -453,6 +473,8 @@ align-self: stretch;
     align-items: center;
     gap: 48px;
     align-self: stretch;
+    margin-right: 20vw;
+    margin-left: 20vw;
 }
 
 #about-body {
@@ -475,16 +497,82 @@ align-self: stretch;
     align-self: stretch;
 }
 
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    flex: 1 0 0;
+}
+
+#row1 {
+    gap: 28px;
+}
+
 #headshot-placeholder {
     height: 360px;
     width: 360px;
-    max-width: 360px;
-    max-height: 360px;
-    /* flex: 1 0 0; */
+    flex: 1 0 0;
 }
 
 #bio-text {
+    display: flex;
+    height: auto;
+    min-height: 360px;
+    max-width:780px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex: 1 0 0;
+    gap: 24px
+}
 
+#about-me {
+    width: 40vw;
+    height: auto;
+    flex-shrink: 0;
+}
+
+#name-socials {
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+}
+
+#social-icons {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.margin-24 {
+    margin-top: 24px;
+}
+
+#education {
+    display: flex;
+    width: 20vw;
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+#interests-hobbies {
+    display: flex;
+    width: 60vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
 }
 
 footer {
