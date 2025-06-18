@@ -519,6 +519,8 @@ align-self: stretch;
 #headshot-placeholder {
     height: 360px;
     width: 360px;
+    min-height: 360px;
+    min-width: 360px;
     flex: 1 0 0;
 }
 
