@@ -528,6 +528,7 @@ align-self: stretch;
     justify-content: center;
     align-items: flex-start;
     align-self: stretch;
+    gap: 24px;
 }
 
 .column {
@@ -543,10 +544,10 @@ align-self: stretch;
 }
 
 #headshot-placeholder {
-    height: 360px;
-    width: 360px;
-    min-height: 360px;
-    min-width: 360px;
+    max-height: 360px;
+    max-width: 360px;
+    width: 63vw;
+    height: 63vw;
 }
 
 #bio-text {
@@ -603,7 +604,31 @@ align-self: stretch;
 }
 
 @media screen and (max-width: 1230px) {
+    #about-body {
+        width: 63vw;
+    }
 
+    #row1 {
+        flex-direction: column;
+    }
+    #about-me {
+        width: 100%;
+    }
+
+    #bio-text {
+        min-height: auto;
+    }
+
+    #headshot-placeholder {
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .row {
+        flex-direction: column;
+    }
 }
 
 footer {
