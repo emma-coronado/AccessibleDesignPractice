@@ -581,7 +581,7 @@ align-self: stretch;
 }
 
 .margin-24 {
-    margin-top: 24px;
+    margin-top: 1vw;
 }
 
 #education {
@@ -590,7 +590,7 @@ align-self: stretch;
     height: auto;
     flex-direction: column;
     align-items: flex-start;
-    gap: 8px;
+    gap: 0.4vw;
     flex-shrink: 0;
 }
 
