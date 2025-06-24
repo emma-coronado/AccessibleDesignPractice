@@ -141,6 +141,11 @@ a {
     padding-bottom: 0;
 }
 
+.text-center {
+    text-align: center;
+}
+
+
 /* Prevent underline on hover for navbar-brand */
 .navbar-brand:hover {
     border-bottom: none !important;
@@ -211,8 +216,6 @@ ul {
     align-items: center;
     gap: 64px;
     align-self: stretch;
-    text-align: center;
-
 }
 
 
@@ -282,6 +285,7 @@ ul {
         margin-left: auto;
         margin-top: 24px;
         margin-bottom: 24px;
+        text-align: center;
     }
 }
 
