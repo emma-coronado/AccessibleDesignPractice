@@ -9,7 +9,7 @@ async function addCards() {
         let imagePath = "assets/cardImages/" + element.imageFile;
 
         cardHTML += `<div class="card">
-                        <img src="${imagePath}" class="card-img">
+                        <img src="${imagePath}" class="card-img" alt="">
                         <div class="card-body light">
                             <h3 class="h4">${element.title}</h3>
                             <p>${element.description}</p>
