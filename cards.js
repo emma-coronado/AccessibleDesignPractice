@@ -8,7 +8,7 @@ async function addCards() {
     cardContent.cards.forEach(element => {
         cardHTML += `<div class="card">
                         <div class="img-placeholder dark">
-                            <p>Place Logo or Image for tool here</p>
+                            <img src="${element.imageFile}">
                         </div>
                         <div class="card-body light">
                             <h3 class="h4">${element.title}</h3>

@@ -498,6 +498,13 @@ align-self: stretch;
     align-items: center;
     gap: 10px;
     align-self: stretch;
+    height: 124px;
+}
+
+.img-placeholder img{
+    object-fit: cover;
+    max-width: 360px;
+    min-width: 300px;
 }
 
 /* end card styling */
