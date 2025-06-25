@@ -494,17 +494,14 @@ align-self: stretch;
     align-self: stretch;
 }
 
-.img-placeholder {
+.card-img {
     display: flex;
-    padding: 54px 61px;
+    /* padding: 54px 61px; */
     justify-content: center;
     align-items: center;
     gap: 10px;
     align-self: stretch;
-    height: 124px;
-}
-
-.img-placeholder img{
+    height: 150px;
     object-fit: cover;
     max-width: 360px;
     min-width: 300px;

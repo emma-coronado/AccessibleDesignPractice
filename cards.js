@@ -6,10 +6,10 @@ async function addCards() {
     var cardHTML = "";
 
     cardContent.cards.forEach(element => {
+        let imagePath = "assets/cardImages/" + element.imageFile;
+
         cardHTML += `<div class="card">
-                        <div class="img-placeholder dark">
-                            <img src="${element.imageFile}">
-                        </div>
+                        <img src="${imagePath}" class="card-img">
                         <div class="card-body light">
                             <h3 class="h4">${element.title}</h3>
                             <p>${element.description}</p>

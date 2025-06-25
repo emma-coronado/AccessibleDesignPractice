@@ -4,37 +4,37 @@
             "title": "Siteimprove",
             "description": "Scans entire websites for accessibility issues, providing prioritized fixes and compliance reporting across WCAG standards.",
             "link": "https://www.siteimprove.com/",
-            "imageFile":"assets/cardImages/siteimprove.png"
+            "imageFile":"siteimprove.png"
         },
         {
             "title": "Axe DevTools",
             "description": "Developer-focused accessibility testing tool that integrates with browser developer tools to find and fix accessibility issues during development.",
             "link": "https://www.deque.com/axe/",
-            "imageFile":""
+            "imageFile":"axeDevTools.png"
         },
         {
             "title": "Firefox Accessibility Tools",
             "description": "Identifies and highlights accessibility issues directly in the browser, helping developers create WCAG-compliant websites",
             "link": "https://www.a11yproject.com/posts/using-firefox-for-accessibility-testing/",
-            "imageFile":""
+            "imageFile":"firefox.png"
         },
         {
             "title": "NVDA",
             "description": "Free, open source, globally accessible screen reader for the blind and vision impaired.",
             "link": "https://www.nvaccess.org/download/",
-            "imageFile":""
+            "imageFile":"nvda.jpg"
         },
         {
             "title": "JAWS",
             "description": "A popular screen reader that provides speech and Braille output for Windows computers.",
             "link": "https://www.freedomscientific.com/products/software/jaws/",
-            "imageFile":""
+            "imageFile":"jaws.webp"
         },
         {
             "title": "WebAIM Contrast Checker",
             "description": "Evaluates text visibility against WCAG standards, ensuring readability for users with visual impairments.",
             "link": "https://webaim.org/resources/contrastchecker/",
-            "imageFile":""
+            "imageFile":"webaim.jpg"
         }
     ]
 }
