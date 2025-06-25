@@ -146,10 +146,7 @@ a {
 }
 
 
-/* Prevent underline on hover for navbar-brand */
-.navbar-brand:hover {
-    border-bottom: none !important;
-}
+
 
 ul {
     margin: 0;
@@ -174,6 +171,12 @@ ul {
     align-items: center;
     gap: 10px;
     padding: 19px 0px 17px 0px;
+}
+
+/* Prevent underline on hover for navbar-brand */
+.navbar-brand:hover {
+    border-bottom: none !important;
+    padding: 19px 0px 17px 0px !important;
 }
 
 
@@ -491,13 +494,17 @@ align-self: stretch;
     align-self: stretch;
 }
 
-.img-placeholder {
+.card-img {
     display: flex;
-    padding: 54px 61px;
+    /* padding: 54px 61px; */
     justify-content: center;
     align-items: center;
     gap: 10px;
     align-self: stretch;
+    height: 150px;
+    object-fit: cover;
+    max-width: 360px;
+    min-width: 300px;
 }
 
 /* end card styling */
