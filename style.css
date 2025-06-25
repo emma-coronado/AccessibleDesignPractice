@@ -112,10 +112,10 @@ h5 {
 
 p {
     font-family: "PT Sans";
-    font-size: 16px;
+    font-size: 1em;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
+    line-height: 1.5;
     margin: 0;
 }
 
@@ -159,7 +159,7 @@ ul {
 
 #navbar {
     display: flex;
-    padding: 24px 5vw;
+    padding: 5px 5vw 5px 5vw;
     justify-content: space-between;
     align-items: center;
     align-content: space-between;
@@ -173,6 +173,7 @@ ul {
     display: flex;
     align-items: center;
     gap: 10px;
+    padding: 19px 0px 17px 0px;
 }
 
 
@@ -191,6 +192,8 @@ ul {
     align-items: center;
     gap: 10px;
     font-weight: 400;
+    padding: 19px 0px 17px 0px;
+    min-width: 44px;
 }
 
 
