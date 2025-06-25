@@ -146,10 +146,7 @@ a {
 }
 
 
-/* Prevent underline on hover for navbar-brand */
-.navbar-brand:hover {
-    border-bottom: none !important;
-}
+
 
 ul {
     margin: 0;
@@ -174,6 +171,12 @@ ul {
     align-items: center;
     gap: 10px;
     padding: 19px 0px 17px 0px;
+}
+
+/* Prevent underline on hover for navbar-brand */
+.navbar-brand:hover {
+    border-bottom: none !important;
+    padding: 19px 0px 17px 0px !important;
 }
 
 
