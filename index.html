@@ -11,19 +11,19 @@
       <a class="navbar-brand" href="#">a11y practice</a>
       <ul class="nav-link-group">
         <li class="nav-item">
-          <a class="nav-link" href="#">Introduction</a>
+          <a class="nav-link" href="#introduction">Introduction</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">WCAG</a>
+          <a class="nav-link" href="#WCAG">WCAG</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">POUR Principles</a>
+          <a class="nav-link" href="#POUR-principles">POUR Principles</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Tools</a>
+          <a class="nav-link" href="#tools-section">Tools</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="#about-section">About</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Contact</a>
@@ -34,13 +34,15 @@
     <main>
       <div id="hero" class="dark">
         <img src="assets/HeroIcon.svg" alt="">
-        <h1 >Accessible Web Design</h1>
-        <p>Explain the purpose of the web page here.</p>
+        <h1>Accessible Web Design</h1>
+        <!-- <p>A brief overview of accessibility challenges, principles, and testing tools.</p> -->
+        <p>Creating digital experiences accessible to all users regardless of abilities or disabilities</p>
+
       </div>
 
       <article>
         <section id="introduction" class="light">
-          <div class="centered-textdiv">
+          <div class="centered-textdiv text-center">
             <h2>Introduction to Web Accessibility</h2>
             <p>
               Web accessibility encompasses the practices, guidelines, and technologies that ensure digital content and interfaces can be used by people of all abilities and disabilities. This includes individuals with visual, auditory, physical, speech, cognitive, and neurological disabilities, making the web truly inclusive.
@@ -63,7 +65,10 @@
               <div class="photo-text">
                 <h3>What are some common challenges for users?</h3>
                 <p>
-                  People with visual impairments may struggle with poor color contrast or images lacking descriptive text.
+                  People with visual impairments may struggle with poor color contrast or images lacking descriptive text. 
+                  Motor disabilities could prevent users from easily and effectively navigating with a mouse. 
+                  Those with hearing disabilities face challenges when videos lack captions or transcripts. 
+                  Cognitive disabilities present challenges when content is overly complex, lacks clear structure, or includes flickering elements that can trigger seizures.
                 </p>
               </div>
               <img src="assets/Photo2.png" alt="">
@@ -80,23 +85,36 @@
           <div id="WCAG-body">
             <div class="WCAG-text">
               <h3>History of WCAG</h3>
-              <p>Lorem ipsum dolor sit amet consectetur. Sollicitudin dictumst mi orci libero nunc leo. Neque senectus lacus vitae adipiscing pellentesque tristique. Condimentum quis ullamcorper morbi tortor in et. Nullam maecenas viverra faucibus dignissim nisi id.</p>
+              <p>
+                WCAG was first developed in 1999 by the W3C (World Wide Web Consortium). 
+                WCAG 1.0 was released in 1999, followed by WCAG 2.0 in 2008, WCAG 2.1 in 2018, and WCAG 2.2 in 2023, with each version building upon previous standards to address evolving technologies.
+              </p>
             </div>
             <div class="WCAG-text">
               <h3>Levels of Conformance</h3>
-              <p>Lorem ipsum dolor sit amet consectetur. Sollicitudin dictumst mi orci libero nunc leo. Neque senectus lacus vitae adipiscing pellentesque tristique. Condimentum quis ullamcorper morbi tortor in et. Nullam maecenas viverra faucibus dignissim nisi id.</p>
+              <p>
+                WCAG defines three levels of conformance: A (minimal accessibility), AA (addresses major barriers, widely adopted standard), and AAA (highest level of accessibility). 
+                Most organizations aim for AA compliance as a reasonable balance.
+              </p>
             </div>
             <div class="WCAG-text">
               <h3>Guidelines and Success Criteria</h3>
-              <p>Lorem ipsum dolor sit amet consectetur. Sollicitudin dictumst mi orci libero nunc leo. Neque senectus lacus vitae adipiscing pellentesque tristique. Condimentum quis ullamcorper morbi tortor in et. Nullam maecenas viverra faucibus dignissim nisi id.</p>
+              <p>
+                WCAG is organized into four main principles (POUR), with specific guidelines under each. 
+                Success criteria are testable statements that define requirements for accessibility at each conformance level.
+              </p>
             </div>
           </div>
         </section>
 
         <section id="POUR-principles" class="light">
-          <div class="centered-textdiv">
+          <div class="centered-textdiv text-center">
             <h2>What are POUR Principles?</h2>
-            <p>Briefly explain what the POUR Principles are and why they’re important to learn about.</p>
+            <p>
+              The “POUR” principles are four foundational concepts for digital and web accessibility.
+              They form the basis of the Web Content Accessibility Guidelines (WCAG). 
+              POUR is an acronym that stands for perceivable, operable, understandable, and robust which are all explained in the context of digital accessibility below.
+            </p>
           </div>
 
           <div class="accordion">
@@ -115,7 +133,8 @@
               </h3>
               <div id="percievable-panel" class="accordion-content" aria-hidden="true">
                 <p>
-                  Explain briefly what the principle is here. Feel free to write 1-2 sentences about that particular pour principle. 
+                  Information and user interface components must be presentable to users in ways they can perceive. 
+                  This means content should be available to all users, regardless of how they consume digital information. 
                 </p>
                 <span class="column-wrapper">
                   <div class="accordion-column">
@@ -127,13 +146,13 @@
                     </span>
                     <ul class="accordion-list">
                       <li>
-                        <p>Example problems</p>
+                        <p>Form labels disappear when clicked on</p>
                       </li>
                       <li>
-                        <p>Example problems</p>
+                        <p>Content overlaps when zoomed in</p>
                       </li>
                       <li>
-                        <p>Example problems</p>
+                        <p>Multimedia content lacks alternative text</p>
                       </li>
                     </ul>
                   </div>
@@ -146,13 +165,13 @@
                     </span>
                     <ul class="accordion-list">
                       <li>
-                        <p>Example problems</p>
+                        <p>Include permanent text labels next to form fields</p>
                       </li>
                       <li>
-                        <p>Example problems</p>
+                        <p>Design responsive layouts</p>
                       </li>
                       <li>
-                        <p>Example problems</p>
+                        <p>Include captions and transcripts</p>
                       </li>
                     </ul>
                   </div>
@@ -174,7 +193,8 @@
               </h3>
               <div id="operable-panel" class="accordion-content" aria-hidden="true">
                 <p>
-                  Explain briefly what the principle is here. Feel free to write 1-2 sentences about that particular pour principle. 
+                  User interface components and navigation must be operable by all users. 
+                  Websites should be navigable and functional regardless of how someone interacts with their device. 
                 </p>
                 <span class="column-wrapper">
                   <div class="accordion-column">
@@ -186,13 +206,13 @@
                     </span>
                     <ul class="accordion-list">
                       <li>
-                        <p>Example problems</p>
+                        <p>Buttons are too small to be easily clicked</p>
                       </li>
                       <li>
-                        <p>Example problems</p>
+                        <p>Features require mouse interaction</p>
                       </li>
                       <li>
-                        <p>Example problems</p>
+                        <p>Element focus is not clearly indicated</p>
                       </li>
                     </ul>
                   </div>
@@ -205,13 +225,13 @@
                     </span>
                     <ul class="accordion-list">
                       <li>
-                        <p>Example problems</p>
+                        <p>Size buttons at least 44×44 pixels</p>
                       </li>
                       <li>
-                        <p>Example problems</p>
+                        <p>Ensure full keyboard functionality</p>
                       </li>
                       <li>
-                        <p>Example problems</p>
+                        <p>Add visual focus indicators</p>
                       </li>
                     </ul>
                   </div>
@@ -233,7 +253,7 @@
               </h3>
               <div id="understandable-panel" class="accordion-content" aria-hidden="true">
                 <p>
-                  Explain briefly what the principle is here. Feel free to write 1-2 sentences about that particular pour principle. 
+                  Information and the operation of the user interface must be understandable. Users should be able to understand both the content and how to interact with it. 
                 </p>
                 <span class="column-wrapper">
                   <div class="accordion-column">
@@ -245,13 +265,13 @@
                     </span>
                     <ul class="accordion-list">
                       <li>
-                        <p>Example problems</p>
+                        <p>Unclear instructions make forms difficult to complete</p>
                       </li>
                       <li>
-                        <p>Example problems</p>
+                        <p>Technical jargon used without explanation</p>
                       </li>
                       <li>
-                        <p>Example problems</p>
+                        <p>Vague link text like "click here"</p>
                       </li>
                     </ul>
                   </div>
@@ -264,13 +284,13 @@
                     </span>
                     <ul class="accordion-list">
                       <li>
-                        <p>Example problems</p>
+                        <p>Provide clear instructions and examples</p>
                       </li>
                       <li>
-                        <p>Example problems</p>
+                        <p>Use plain, simple language</p>
                       </li>
                       <li>
-                        <p>Example problems</p>
+                        <p>Use descriptive link text that makes sense out of context</p>
                       </li>
                     </ul>
                   </div>
@@ -292,7 +312,8 @@
               </h3>
               <div id="robust-panel" class="accordion-content" aria-hidden="true">
                 <p>
-                  Explain briefly what the principle is here. Feel free to write 1-2 sentences about that particular pour principle. 
+                  All devices must be able to use the content. 
+                  This includes compatibility with current and future technologies with accordance to current web standards. 
                 </p>
                 <span class="column-wrapper">
                   <div class="accordion-column">
@@ -304,13 +325,13 @@
                     </span>
                     <ul class="accordion-list">
                       <li>
-                        <p>Example problems</p>
+                        <p>Pages that work in some browsers but not others</p>
                       </li>
                       <li>
-                        <p>Example problems</p>
+                        <p>Dynamic content changes not announced</p>
                       </li>
                       <li>
-                        <p>Example problems</p>
+                        <p>Missing features on mobile versions</p>
                       </li>
                     </ul>
                   </div>
@@ -323,13 +344,13 @@
                     </span>
                     <ul class="accordion-list">
                       <li>
-                        <p>Example problems</p>
+                        <p>Test across multiple browsers and devices</p>
                       </li>
                       <li>
-                        <p>Example problems</p>
+                        <p>Use ARIA live regions for important updates</p>
                       </li>
                       <li>
-                        <p>Example problems</p>
+                        <p>Implement responsive design with consistent functionality</p>
                       </li>
                     </ul>
                   </div>
@@ -341,8 +362,8 @@
 
         <section id="tools-section" class="grey">
           <div class="centered-textdiv">
-            <h2>Accessibility Testing Tools</h2>
-            <p>Write a brief summary about the benefits of using testing tools. </p>
+            <h2 class="text-center">Accessibility Testing Tools</h2>
+            <p class="text-center">Essential tools to evaluate and improve your website's accessibility compliance.</p>
           </div>
 
           <div id="tool-cards"></div>
@@ -362,12 +383,12 @@
                   <span id="name-socials">
                     <h3>Emma Coronado</h3>
                     <div id="social-icons">
-                      <a href="https://github.com/emma-coronado">
+                      <a href="https://github.com/emma-coronado" aria-label="Emma's Github Profile">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
                           <path d="M12 2.41846C10.6868 2.41846 9.38642 2.67711 8.17317 3.17966C6.95991 3.68221 5.85752 4.4188 4.92893 5.34739C3.05357 7.22275 2 9.76629 2 12.4185C2 16.8385 4.87 20.5885 8.84 21.9185C9.34 21.9985 9.5 21.6885 9.5 21.4185V19.7285C6.73 20.3285 6.14 18.3885 6.14 18.3885C5.68 17.2285 5.03 16.9185 5.03 16.9185C4.12 16.2985 5.1 16.3185 5.1 16.3185C6.1 16.3885 6.63 17.3485 6.63 17.3485C7.5 18.8685 8.97 18.4185 9.54 18.1785C9.63 17.5285 9.89 17.0885 10.17 16.8385C7.95 16.5885 5.62 15.7285 5.62 11.9185C5.62 10.8085 6 9.91846 6.65 9.20846C6.55 8.95846 6.2 7.91846 6.75 6.56846C6.75 6.56846 7.59 6.29846 9.5 7.58846C10.29 7.36846 11.15 7.25846 12 7.25846C12.85 7.25846 13.71 7.36846 14.5 7.58846C16.41 6.29846 17.25 6.56846 17.25 6.56846C17.8 7.91846 17.45 8.95846 17.35 9.20846C18 9.91846 18.38 10.8085 18.38 11.9185C18.38 15.7385 16.04 16.5785 13.81 16.8285C14.17 17.1385 14.5 17.7485 14.5 18.6785V21.4185C14.5 21.6885 14.66 22.0085 15.17 21.9185C19.14 20.5785 22 16.8385 22 12.4185C22 11.1052 21.7413 9.80488 21.2388 8.59162C20.7362 7.37837 19.9997 6.27597 19.0711 5.34739C18.1425 4.4188 17.0401 3.68221 15.8268 3.17966C14.6136 2.67711 13.3132 2.41846 12 2.41846Z" fill="#002657"/>
                         </svg>
                       </a>
-                      <a href="mailto:ecoronado@ufl.edu">
+                      <a href="mailto:ecoronado@ufl.edu" aria-label="Reach Emma through email">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
                           <path d="M12 22.4185C10.6167 22.4185 9.31667 22.1558 8.1 21.6305C6.88333 21.1051 5.825 20.3928 4.925 19.4935C4.025 18.5935 3.31267 17.5351 2.788 16.3185C2.26333 15.1018 2.00067 13.8018 2 12.4185C2 11.0351 2.26267 9.73512 2.788 8.51846C3.31333 7.30179 4.02567 6.24346 4.925 5.34346C5.825 4.44346 6.88333 3.73112 8.1 3.20646C9.31667 2.68179 10.6167 2.41912 12 2.41846C13.3833 2.41846 14.6833 2.68112 15.9 3.20646C17.1167 3.73179 18.175 4.44412 19.075 5.34346C19.975 6.24346 20.6877 7.30179 21.213 8.51846C21.7383 9.73512 22.0007 11.0351 22 12.4185V13.8685C22 14.8518 21.6627 15.6895 20.988 16.3815C20.3133 17.0735 19.484 17.4191 18.5 17.4185C17.9167 17.4185 17.3667 17.2935 16.85 17.0435C16.3333 16.7935 15.9 16.4351 15.55 15.9685C15.0667 16.4518 14.5207 16.8145 13.912 17.0565C13.3033 17.2985 12.666 17.4191 12 17.4185C10.6167 17.4185 9.43733 16.9308 8.462 15.9555C7.48667 14.9801 6.99933 13.8011 7 12.4185C7 11.0351 7.48767 9.85579 8.463 8.88046C9.43833 7.90512 10.6173 7.41779 12 7.41846C13.3833 7.41846 14.5627 7.90612 15.538 8.88146C16.5133 9.85679 17.0007 11.0358 17 12.4185V13.8685C17 14.3018 17.1417 14.6685 17.425 14.9685C17.7083 15.2685 18.0667 15.4185 18.5 15.4185C18.9333 15.4185 19.2917 15.2685 19.575 14.9685C19.8583 14.6685 20 14.3018 20 13.8685V12.4185C20 10.1851 19.225 8.29346 17.675 6.74346C16.125 5.19346 14.2333 4.41846 12 4.41846C9.76667 4.41846 7.875 5.19346 6.325 6.74346C4.775 8.29346 4 10.1851 4 12.4185C4 14.6518 4.775 16.5435 6.325 18.0935C7.875 19.6435 9.76667 20.4185 12 20.4185H16C16.2833 20.4185 16.521 20.5145 16.713 20.7065C16.905 20.8985 17.0007 21.1358 17 21.4185C17 21.7018 16.904 21.9395 16.712 22.1315C16.52 22.3235 16.2827 22.4191 16 22.4185H12ZM12 15.4185C12.8333 15.4185 13.5417 15.1268 14.125 14.5435C14.7083 13.9601 15 13.2518 15 12.4185C15 11.5851 14.7083 10.8768 14.125 10.2935C13.5417 9.71012 12.8333 9.41846 12 9.41846C11.1667 9.41846 10.4583 9.71012 9.875 10.2935C9.29167 10.8768 9 11.5851 9 12.4185C9 13.2518 9.29167 13.9601 9.875 14.5435C10.4583 15.1268 11.1667 15.4185 12 15.4185Z" fill="#002657"/>
                         </svg>
@@ -375,10 +396,12 @@
                     </div>
                   </span>
                   <p class="margin-24">
-                    Write a short bio here about yourself. You can list your hometown, years in school, major, etc. Feel free to write as much or as little as you’d like. 
+                    Emma Coronado is a Computer Science student at the University of Florida working as a Web Development Intern at UFIT this summer. 
+                    With experience in JavaScript, React, and web development, she enjoys building user-friendly applications and learning new technologies along the way.
                   </p>
                   <p class="margin-24">
-                    Lorem ipsum dolor sit amet consectetur. Elementum sagittis auctor elit semper sed ipsum. Turpis nulla aliquam egestas augue rutrum. Porta pretium nisl morbi placerat orci urna non. Convallis tellus proin tincidunt tristique.
+                    When she's not coding, Emma helps fellow students as a Data Structures and Algorithms TA and participates in Women in Computer Science and Engineering. 
+                    She balances her tech interests with UF Club Cheerleading and is always looking for opportunities to grow her skills and connect with the campus community. 
                   </p>
                 </div>
                 <div id="education">

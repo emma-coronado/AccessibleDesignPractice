@@ -112,10 +112,10 @@ h5 {
 
 p {
     font-family: "PT Sans";
-    font-size: 16px;
+    font-size: 1em;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
+    line-height: 1.5;
     margin: 0;
 }
 
@@ -141,6 +141,11 @@ a {
     padding-bottom: 0;
 }
 
+.text-center {
+    text-align: center;
+}
+
+
 /* Prevent underline on hover for navbar-brand */
 .navbar-brand:hover {
     border-bottom: none !important;
@@ -154,7 +159,7 @@ ul {
 
 #navbar {
     display: flex;
-    padding: 24px 5vw;
+    padding: 5px 5vw 5px 5vw;
     justify-content: space-between;
     align-items: center;
     align-content: space-between;
@@ -168,6 +173,7 @@ ul {
     display: flex;
     align-items: center;
     gap: 10px;
+    padding: 19px 0px 17px 0px;
 }
 
 
@@ -186,6 +192,8 @@ ul {
     align-items: center;
     gap: 10px;
     font-weight: 400;
+    padding: 19px 0px 17px 0px;
+    min-width: 44px;
 }
 
 
@@ -211,8 +219,6 @@ ul {
     align-items: center;
     gap: 64px;
     align-self: stretch;
-    text-align: center;
-
 }
 
 
@@ -282,6 +288,7 @@ ul {
         margin-left: auto;
         margin-top: 24px;
         margin-bottom: 24px;
+        text-align: center;
     }
 }
 
@@ -370,7 +377,7 @@ ul {
     border: none;
     padding: 0;
 
-    padding: 21px 24px;    
+    padding: 21px 24px 13px 24px;    
     width: 60vw;
 }
 
@@ -419,12 +426,16 @@ align-self: stretch;
     display: flex;
     align-items: center;
     gap: 8px;
-    }
+}
+
+.accordion-subheading h4 {
+    font-size: 16px;
+}
 
 .accordion-list {
     display: flex;
     margin: 0;
-    padding-left: 52px;
+    padding-left: 42px;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
@@ -581,7 +592,7 @@ align-self: stretch;
 }
 
 .margin-24 {
-    margin-top: 24px;
+    margin-top: 1vw;
 }
 
 #education {
@@ -590,7 +601,7 @@ align-self: stretch;
     height: auto;
     flex-direction: column;
     align-items: flex-start;
-    gap: 8px;
+    gap: 0.4vw;
     flex-shrink: 0;
 }
 
@@ -601,6 +612,10 @@ align-self: stretch;
     align-items: center;
     gap: 24px;
     align-self: stretch;
+}
+
+#interests-hobbies ul {
+    padding-left: 25px;
 }
 
 @media screen and (max-width: 1230px) {
