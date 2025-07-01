@@ -203,20 +203,37 @@ ul {
     .nav-link-group {
         display: none;
         flex-direction: column;
-        gap: 16px;
+        gap: 10px;
         position: absolute;
         top: 100%;
         left: 0;
         width: 100%; /* Make the menu take up the full width */
-        padding: 16px;
+        padding: 13px 0px;
         border-top: 1px solid rgba(0, 38, 87, 0.30);
         border-bottom: 1px solid rgba(0, 38, 87, 0.30);
-
     }
 
     .nav-link {
-        padding: 10px;
+        padding: 13px 20px;
         text-align: center;
+        justify-content: left;
+    }
+
+    .nav-item {
+        width: 100%;
+    }
+
+    .nav-item:hover, .nav-link:hover {
+        background-color: var(--Brand-Colors-Button-Hover-BG);
+        border-bottom: none !important;
+    }
+
+    .nav-link:hover {
+        padding-bottom: 13px !important;
+    }
+
+    .nav-item:active {
+        border-bottom: none !important;
     }
 
     #navbar {
