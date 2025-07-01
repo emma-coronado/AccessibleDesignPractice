@@ -15,14 +15,6 @@ body {
     padding: 0;
 }
 
-/* .light-text {
-    color: var(--Brand-Colors-White);
-}
-
-.dark-text {
-    color: var(--Brand-Colors-Dark-Blue);
-} */
-
 .dark {
     background-color: var(--Brand-Colors-Dark-Blue);
 }
@@ -173,11 +165,20 @@ ul {
     padding: 19px 0px 17px 0px;
 }
 
+
+#menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
 /* Prevent underline on hover for navbar-brand */
 .navbar-brand:hover {
     border-bottom: none !important;
     padding: 19px 0px 17px 0px !important;
 }
+
 
 
 .nav-link-group {
@@ -197,6 +198,60 @@ ul {
     font-weight: 400;
     padding: 19px 0px 17px 0px;
     min-width: 44px;
+}
+
+
+@media screen and (max-width: 768px) {
+    #menu-toggle {
+        display: block;
+    }
+
+    .nav-link-group {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%; /* Make the menu take up the full width */
+        padding: 13px 0px;
+        border-top: 1px solid rgba(0, 38, 87, 0.30);
+        border-bottom: 1px solid rgba(0, 38, 87, 0.30);
+    }
+
+    .nav-link {
+        padding: 13px 20px;
+        text-align: center;
+        justify-content: left;
+    }
+
+    .nav-item {
+        width: 100%;
+    }
+
+    .nav-item:hover, .nav-link:hover {
+        background-color: var(--Brand-Colors-Button-Hover-BG);
+        border-bottom: none !important;
+    }
+
+    .nav-link:hover {
+        padding-bottom: 13px !important;
+    }
+
+    .nav-item:active {
+        border-bottom: none !important;
+    }
+
+    #navbar {
+        box-shadow: 0px 0px 12px 12px rgba(0, 0, 0, 0.05);
+        border-bottom: 1px solid rgba(0, 38, 87, 0.30);
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .nav-link-group {
+        display: flex !important;
+    }
 }
 
 
@@ -305,6 +360,10 @@ ul {
     align-self: stretch;
 }
 
+#accessibilitySvg {
+    max-width: 300px;
+}
+
 #WCAG-body {
     display: flex;
     /* min-width: 700px;
@@ -362,10 +421,6 @@ ul {
     gap: 10px;
 }
 
-.accordion-header {
-
-}
-
 .accordion-button {
     font-family: "PT Sans";
     font-size: 24px;
@@ -393,10 +448,6 @@ display: flex;
 justify-content: space-between;
 align-items: flex-start;
 align-self: stretch;
-}
-
-.accordion-icon {
-
 }
 
 .accordion-content {
@@ -457,6 +508,19 @@ align-self: stretch;
     gap: 48px;
     align-self: stretch;
     flex-wrap: wrap;
+}
+
+@media screen and (max-width: 768px) {
+    #tools-section {
+        padding: 64px 0px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .card {
+        max-width:300px !important;
+    }
+
 }
 
 /* card styling */
