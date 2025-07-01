@@ -9,7 +9,14 @@
   <body>
     <nav class="navbar dark" id="navbar">
       <a class="navbar-brand" href="#">a11y practice</a>
-      <ul class="nav-link-group">
+
+      <button id="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path d="M3 6h18M3 12h18M3 18h18"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+
+      <ul class="nav-link-group dark" id="nav-items">
         <li class="nav-item">
           <a class="nav-link" href="#introduction">Introduction</a>
         </li>
@@ -78,8 +85,8 @@
 
         <section id="WCAG" class="dark">
           <div class="centered-textdiv">
-            <img src="assets/WebAccessibility.svg" alt="">
-            <h2>What is WCAG?</h2>
+            <img src="assets/WebAccessibility.png" alt="" id="accessibilitySvg">
+            <h2 class="text-center">What is WCAG?</h2>
             <p>Explain what WCAG is here.</p>
           </div>
           <div id="WCAG-body">
