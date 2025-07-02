@@ -5,6 +5,9 @@
     --Brand-Colors-White: #FFF;
     --Brand-Colors-Dark-Blue: #002657;
     --Brand-Colors-Button-Hover-BG: #F4F6F6;
+
+    --Side-Margin: 20vw;
+    --Section-Width: 60vw;
 }
 
 body {
@@ -226,8 +229,8 @@ ul {
 #WCAG-body {
     align-items: center;
     gap: 36px;
-    margin-left: 20vw;
-    margin-right: 20vw;
+    margin-left: var(--Side-Margin);
+    margin-right: var(--Side-Margin);
 }
 
 .WCAG-text {
@@ -240,7 +243,7 @@ ul {
 #POUR-principles {
     padding: 64px 0 96px;
     gap: 48px;
-    max-width: 60vw;
+    max-width: var(--Section-Width);
     margin: 0 auto;
 }
 
@@ -250,8 +253,8 @@ ul {
     display: flex;
     max-width: 1168px;
     flex-direction: column;
-    margin-right: 20vw;
-    margin-left: 20vw;
+    margin-right: var(--Side-Margin);
+    margin-left: var(--Side-Margin);
 }
 
 .accordion-item {
@@ -273,7 +276,7 @@ ul {
     color: var(--Brand-Colors-Dark-Blue);
     border: none;
     padding: 21px 24px 13px;    
-    width: 60vw;
+    width: var(--Section-Width);
 }
 
 .accordion-button:hover {
@@ -287,7 +290,7 @@ ul {
 }
 
 .accordion-content {
-    padding: 8px 58px 35px 24px;
+    padding: 8px 16px;
     flex-direction: column;
     align-items: flex-start;
     gap: 24px;
@@ -309,6 +312,7 @@ ul {
     align-items: flex-start;
     gap: 16px;
     flex: 1 0 0;
+    min-width: 300px;
 }
 
 .accordion-subheading {
@@ -334,7 +338,7 @@ ul {
 /* last few sections */
 
 #tools-section {
-    padding: 64px 20vw;
+    padding: 64px 18vw;
     gap: 48px;
     flex-wrap: wrap;
 }
@@ -482,6 +486,11 @@ footer {
 /* breakpoints for smaller screen widths */
 
 @media screen and (max-width: 1230px) {
+    :root {
+        --Side-Margin: 10vw;
+        --Section-Width: 80vw;
+    }
+
     /* initial section with images */
 
     .photosection {
@@ -541,6 +550,12 @@ footer {
 }
 
 @media screen and (max-width: 768px) {  /* screen widths 768px and under */
+    :root {
+        --Side-Margin: 10vw;
+        --Section-Width: 80vw;
+    }
+    
+    
     /* hamburger menu */
     
     #menu-toggle {
@@ -591,7 +606,7 @@ footer {
     /* tools section */
 
     #tools-section {
-        padding: 64px 0px;
+        padding: 7vw 7vw;
         margin: 0 auto;
     }
 
