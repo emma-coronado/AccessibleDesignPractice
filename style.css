@@ -465,6 +465,7 @@ align-self: stretch;
     justify-content: center;
     align-items: flex-start;
     align-self: stretch;
+    flex-wrap: wrap;
 }
 
 .accordion-column {
