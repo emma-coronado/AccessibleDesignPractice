@@ -14,26 +14,23 @@ body {
 
 .dark {
     background-color: var(--Brand-Colors-Dark-Blue);
-}
-
-.dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark p, .dark a {
     color: var(--Brand-Colors-White);
 }
 
 .light {
     background-color: var(--Brand-Colors-White);
-}
-
-.light h1, .light h2, .light h3, .light h4, .light h5, .light p, .light a {
     color: var(--Brand-Colors-Dark-Blue);
 }
 
 .grey {
     background-color: var(--Brand-Colors-Button-Hover-BG);
+    color: var(--Brand-Colors-Dark-Blue);
 }
 
+.dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark p, .dark a,
+.light h1, .light h2, .light h3, .light h4, .light h5, .light p, .light a,
 .grey h1, .grey h2, .grey h3, .grey h4, .grey h5, .grey p, .grey a {
-    color: var(--Brand-Colors-Dark-Blue);
+    color: inherit;
 }
 
 h1 {
@@ -310,7 +307,7 @@ ul {
 
 .accordion-button {
     font-family: "PT Sans";
-    font-size: 1.5em;
+    font-size: 1em;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
