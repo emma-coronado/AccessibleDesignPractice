@@ -470,7 +470,6 @@ align-self: stretch;
 
 .card-img {
     display: flex;
-    /* padding: 54px 61px; */
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -578,7 +577,6 @@ align-self: stretch;
 
 #education {
     display: flex;
-    /* width: 20vw; */
     height: auto;
     flex-direction: column;
     align-items: flex-start;
