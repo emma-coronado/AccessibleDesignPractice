@@ -39,7 +39,7 @@
     </nav>
       
     <main>
-      <div id="hero" class="dark">
+      <div id="hero" class="dark center-content flex-column">
         <img src="assets/HeroIcon.svg" alt="">
         <h1>Accessible Web Design</h1>
         <!-- <p>A brief overview of accessibility challenges, principles, and testing tools.</p> -->
@@ -48,17 +48,17 @@
       </div>
 
       <article>
-        <section id="introduction" class="light">
+        <section id="introduction" class="light center-content flex-column">
           <div class="centered-textdiv text-center">
             <h2>Introduction to Web Accessibility</h2>
             <p>
               Web accessibility encompasses the practices, guidelines, and technologies that ensure digital content and interfaces can be used by people of all abilities and disabilities. This includes individuals with visual, auditory, physical, speech, cognitive, and neurological disabilities, making the web truly inclusive.
             </p>
           </div>
-          <div id="photo-section-wrapper">
+          <div id="photo-section-wrapper" class="flex-column">
             <span class="photosection">
               <img src="assets/Photo1.png" alt="" id="photo1">
-              <div class="photo-text">
+              <div class="photo-text flex-column">
                 <h3>Why is web accessibility important?</h3>
                 <p>
                   Web accessibility ensures equal access to information and functionality for all users, delivering an improved user experience for everyone, not just those with disabilities.
@@ -69,7 +69,7 @@
               </div>
             </span>
             <span class="photosection">
-              <div class="photo-text">
+              <div class="photo-text flex-column">
                 <h3>What are some common challenges for users?</h3>
                 <p>
                   People with visual impairments may struggle with poor color contrast or images lacking descriptive text. 
@@ -83,13 +83,13 @@
           </div>
         </section>
 
-        <section id="WCAG" class="dark">
+        <section id="WCAG" class="dark center-content flex-column">
           <div class="centered-textdiv">
             <img src="assets/WebAccessibility.png" alt="" id="accessibilitySvg">
             <h2 class="text-center">What is WCAG?</h2>
             <p>Explain what WCAG is here.</p>
           </div>
-          <div id="WCAG-body">
+          <div id="WCAG-body" class="flex-column">
             <div class="WCAG-text">
               <h3>History of WCAG</h3>
               <p>
@@ -114,7 +114,7 @@
           </div>
         </section>
 
-        <section id="POUR-principles" class="light">
+        <section id="POUR-principles" class="light center-content flex-column">
           <div class="centered-textdiv text-center">
             <h2>What are POUR Principles?</h2>
             <p>
@@ -124,7 +124,7 @@
             </p>
           </div>
 
-          <div class="accordion">
+          <div class="accordion center-content">
             <div class="accordion-item">
               <h3 class="accordion-header">
                 <button type="button" class="accordion-button" aria-controls="percievable-panel" aria-expanded="false">
@@ -367,25 +367,25 @@
           </div>
         </section>
 
-        <section id="tools-section" class="grey">
+        <section id="tools-section" class="grey center-content flex-column">
           <div class="centered-textdiv">
             <h2 class="text-center">Accessibility Testing Tools</h2>
             <p class="text-center">Essential tools to evaluate and improve your website's accessibility compliance.</p>
           </div>
 
-          <div id="tool-cards"></div>
+          <div id="tool-cards" class="center-content"></div>
         </section>
       </article>
 
-      <section id="about-section" class="light">
+      <section id="about-section" class="light center-content flex-column">
         <div class="centered-textdiv">
           <h2>About me</h2>
         </div>
-        <div id="about-body">
-          <span id="about-card">
+        <div id="about-body" class="center-content flex-column">
+          <span id="about-card" class="flex-column">
             <span id="row1" class="row">
               <div id="headshot-placeholder" class="dark"></div>
-              <div id="bio-text">
+              <div id="bio-text" class="flex-column">
                 <div id="about-me">
                   <span id="name-socials">
                     <h3>Emma Coronado</h3>
@@ -411,7 +411,7 @@
                     She balances her tech interests with UF Club Cheerleading and is always looking for opportunities to grow her skills and connect with the campus community. 
                   </p>
                 </div>
-                <div id="education">
+                <div id="education" class="flex-column">
                   <h4>Education</h4>
                   <p>University of Florida </p>
                   <p>Computer Science</p>
@@ -420,7 +420,7 @@
               </div>
             </span>
           </span>
-          <span id="interests-hobbies">
+          <span id="interests-hobbies" class="center-content flex-column">
             <div class="row">
               <div class="column">
                 <h4>Professional Interests</h4>
@@ -445,7 +445,7 @@
       </section>
     </main>
 
-    <footer class="dark">
+    <footer class="dark center-content flex-column">
       <p style="font-weight: 700;">© 2025 Emma Coronado</p>
       <p>Built with HTML/CSS/JS</p>
     </footer>

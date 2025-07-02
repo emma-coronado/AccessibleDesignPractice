@@ -9,7 +9,6 @@
 
 body {
     margin: 0;
-    padding: 0;
 }
 
 .dark {
@@ -27,9 +26,7 @@ body {
     color: var(--Brand-Colors-Dark-Blue);
 }
 
-.dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark p, .dark a,
-.light h1, .light h2, .light h3, .light h4, .light h5, .light p, .light a,
-.grey h1, .grey h2, .grey h3, .grey h4, .grey h5, .grey p, .grey a {
+h1, h2, h3, h4, h5, p, a {
     color: inherit;
 }
 
@@ -87,8 +84,6 @@ p {
     margin: 0;
 }
 
-/* Card Links */
-
 a {
     font-family: "PT Sans";
     font-size: 1em;
@@ -99,13 +94,8 @@ a {
     padding-bottom: 2px;
 }
 
-.light a:hover {
-    border-bottom: 2px solid var(--Brand-Colors-Dark-Blue);
-    padding-bottom: 0;
-}
-
-.dark a:hover {
-    border-bottom: 2px solid var(--Brand-Colors-White);
+a:hover {
+    border-bottom: 2px solid currentColor;
     padding-bottom: 0;
 }
 
@@ -117,15 +107,26 @@ ul {
     margin: 0;
 }
 
+/* Display classes */
+
+.center-content {
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
 /* Nav */
 
 #navbar {
     display: flex;
-    padding: 5px 5vw 5px 5vw;
+    padding: 5px 5vw;
     justify-content: space-between;
     align-items: center;
     align-content: space-between;
-    align-self: stretch;
     flex-wrap: wrap;
     position: sticky;
     top: 0;
@@ -135,12 +136,8 @@ ul {
     display: flex;
     align-items: center;
     gap: 10px;
-    padding: 19px 0px 17px 0px;
-}
-
-.navbar-brand:hover {   /* Prevent underline on hover for navbar-brand */
     border-bottom: none !important;
-    padding: 19px 0px 17px 0px !important;
+    padding: 19px 0 17px !important;
 }
 
 #menu-toggle {
@@ -165,31 +162,22 @@ ul {
     align-items: center;
     gap: 10px;
     font-weight: 400;
-    padding: 19px 0px 17px 0px;
+    padding: 19px 0 17px;
     min-width: 44px;
 }
 
 /* More Styles */
 
 #hero {
-    display: flex;
     min-height: 360px;
     padding: 48px 15vw;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 16px;
     text-align: center;
 }
 
 #introduction {
-    display: flex;
     padding-top: 64px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 64px;
-    align-self: stretch;
 }
 
 .centered-textdiv {
@@ -198,23 +186,17 @@ ul {
     flex-direction: column;
     align-items: center;
     gap: 8px;
-    align-self: stretch;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 0 auto;
     width: 100%;
 }
 
 #photo-section-wrapper {
-    display: flex;
-    flex-direction: column;
     align-items: flex-start;
-    align-self: stretch;
 }
 
 .photosection {
     display: flex;
     align-items: flex-start;
-    align-self: stretch;
     height: 28vw;
 }
 
@@ -222,28 +204,19 @@ ul {
     max-width: 100%;
     height: 100%;
     display: block;
-
 }
 
 .photo-text {
-    display: flex;
     width: 840px;
     padding: 0px 5vw;
-    flex-direction: column;
     justify-content: center;
     gap: 24px;
     align-self: stretch;
-
 }
 
 #WCAG {
-    display: flex;
-    padding: 64px 0px 96px 0px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding: 64px 0 96px;
     gap: 48px;
-    align-self: stretch;
 }
 
 #accessibilitySvg {
@@ -251,13 +224,8 @@ ul {
 }
 
 #WCAG-body {
-    display: flex;
-    /* min-width: 700px;
-    max-width: 1168px; */
-    flex-direction: column;
     align-items: center;
     gap: 36px;
-    align-self: stretch;    
     margin-left: 20vw;
     margin-right: 20vw;
 }
@@ -266,22 +234,14 @@ ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: left;
     gap: 8px;
-    align-self: stretch;
 }
 
 #POUR-principles {
-    display: flex;
-    padding: 64px 0px 96px 0px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding: 64px 0 96px;
     gap: 48px;
-    align-self: stretch;
     max-width: 60vw;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 0 auto;
 }
 
 /* accordion styling */
@@ -290,9 +250,6 @@ ul {
     display: flex;
     max-width: 1168px;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-self: stretch;
     margin-right: 20vw;
     margin-left: 20vw;
 }
@@ -315,7 +272,7 @@ ul {
     background-color: var(--Brand-Colors-White);
     color: var(--Brand-Colors-Dark-Blue);
     border: none;
-    padding: 21px 24px 13px 24px;    
+    padding: 21px 24px 13px;    
     width: 60vw;
 }
 
@@ -327,7 +284,6 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    align-self: stretch;
 }
 
 .accordion-content {
@@ -343,7 +299,6 @@ ul {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    align-self: stretch;
     flex-wrap: wrap;
 }
 
@@ -374,19 +329,13 @@ ul {
     justify-content: center;
     align-items: flex-start;
     gap: 8px;
-    align-self: stretch;
 }
 
 /* last few sections */
 
 #tools-section {
-    display: flex;
     padding: 64px 20vw;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 48px;
-    align-self: stretch;
     flex-wrap: wrap;
 }
 
@@ -394,10 +343,7 @@ ul {
 
 #tool-cards {
     display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 48px;
-    align-self: stretch;
     flex-wrap: wrap;
 }
 
@@ -407,10 +353,8 @@ ul {
     justify-content: center;
     align-items: flex-start;
     flex: 1 0 0;
-
     border: 1px solid rgba(0, 38, 87, 0.30);
     background: var(--Brand-Colors-White);
-
     max-width: 360px;
     min-width: 300px;
 }
@@ -422,7 +366,6 @@ ul {
     justify-content: center;
     align-items: flex-start;
     gap: 8px;
-    align-self: stretch;
 }
 
 .card-img {
@@ -440,35 +383,20 @@ ul {
 /* end card styling */
 
 #about-section {
-    display: flex;
     padding: 64px 10px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 48px;
-    align-self: stretch;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 0 auto;
     max-width: 1168px;
 }
 
 #about-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 24px;
-    align-self: stretch;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 0 auto;
 }
 
 #about-card {
-    display: flex;
-    flex-direction: column;
     align-items: flex-start;
     gap: 24px;
-    align-self: stretch;
 }
 
 .row {
@@ -499,11 +427,9 @@ ul {
 }
 
 #bio-text {
-    display: flex;
     height: auto;
     min-height: 360px;
     max-width:780px;
-    flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
     flex: 1 0 0;
@@ -533,19 +459,13 @@ ul {
 }
 
 #education {
-    display: flex;
     height: auto;
-    flex-direction: column;
     align-items: flex-start;
     gap: 0.4vw;
     flex-shrink: 0;
 }
 
 #interests-hobbies {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 24px;
     align-self: stretch;
 }
@@ -555,17 +475,11 @@ ul {
 }
 
 footer {
-    display: flex;
     padding: 34px 96px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 10px;
-    align-self: stretch;
 }
 
 /* breakpoints for smaller screen widths */
-
 
 @media screen and (max-width: 1230px) {
     /* initial section with images */
@@ -587,10 +501,7 @@ footer {
 
     .photo-text {
         width: 63vw;
-        margin-right: auto;
-        margin-left: auto;
-        margin-top: 24px;
-        margin-bottom: 24px;
+        margin: 24px auto;
         text-align: center;
     }
 
@@ -603,6 +514,7 @@ footer {
     #row1 {
         flex-direction: column;
     }
+
     #about-me {
         width: 100%;
     }
@@ -612,8 +524,7 @@ footer {
     }
 
     #headshot-placeholder {
-        margin-right: auto;
-        margin-left: auto;
+        margin: 0 auto;
     }
 }
 
@@ -681,8 +592,7 @@ footer {
 
     #tools-section {
         padding: 64px 0px;
-        margin-right: auto;
-        margin-left: auto;
+        margin: 0 auto;
     }
 
     .card {
