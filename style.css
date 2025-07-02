@@ -1,7 +1,4 @@
-/* Space Mono font */
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap'); 
-
-/* PT Sans font */
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root {
@@ -19,13 +16,7 @@ body {
     background-color: var(--Brand-Colors-Dark-Blue);
 }
 
-.dark h1,
-.dark h2,
-.dark h3,
-.dark h4,
-.dark h5,
-.dark p,
-.dark a{
+.dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark p, .dark a {
     color: var(--Brand-Colors-White);
 }
 
@@ -33,13 +24,7 @@ body {
     background-color: var(--Brand-Colors-White);
 }
 
-.light h1,
-.light h2,
-.light h3,
-.light h4,
-.light h5,
-.light p,
-.light a {
+.light h1, .light h2, .light h3, .light h4, .light h5, .light p, .light a {
     color: var(--Brand-Colors-Dark-Blue);
 }
 
@@ -47,13 +32,7 @@ body {
     background-color: var(--Brand-Colors-Button-Hover-BG);
 }
 
-.grey h1,
-.grey h2,
-.grey h3,
-.grey h4,
-.grey h5,
-.grey p,
-.grey a {
+.grey h1, .grey h2, .grey h3, .grey h4, .grey h5, .grey p, .grey a {
     color: var(--Brand-Colors-Dark-Blue);
 }
 
@@ -137,9 +116,6 @@ a {
     text-align: center;
 }
 
-
-
-
 ul {
     margin: 0;
 }
@@ -165,6 +141,10 @@ ul {
     padding: 19px 0px 17px 0px;
 }
 
+.navbar-brand:hover {   /* Prevent underline on hover for navbar-brand */
+    border-bottom: none !important;
+    padding: 19px 0px 17px 0px !important;
+}
 
 #menu-toggle {
     display: none;
@@ -172,14 +152,6 @@ ul {
     border: none;
     cursor: pointer;
 }
-
-/* Prevent underline on hover for navbar-brand */
-.navbar-brand:hover {
-    border-bottom: none !important;
-    padding: 19px 0px 17px 0px !important;
-}
-
-
 
 .nav-link-group {
     display: flex;
@@ -200,8 +172,6 @@ ul {
     min-width: 44px;
 }
 
-
-
 /* More Styles */
 
 #hero {
@@ -215,7 +185,6 @@ ul {
     text-align: center;
 }
 
-
 #introduction {
     display: flex;
     padding-top: 64px;
@@ -225,7 +194,6 @@ ul {
     gap: 64px;
     align-self: stretch;
 }
-
 
 .centered-textdiv {
     display: flex;
@@ -335,8 +303,6 @@ ul {
 .accordion-item {
     border-bottom: 1px solid var(--Brand-Colors-Dark-Blue);
     display: flex;
-    /* width: 1050px; */
-    /* padding: 21px 24px; */
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
@@ -349,13 +315,9 @@ ul {
     font-weight: 700;
     line-height: normal;
     margin: 0;
-
     background-color: var(--Brand-Colors-White);
     color: var(--Brand-Colors-Dark-Blue);
-
     border: none;
-    padding: 0;
-
     padding: 21px 24px 13px 24px;    
     width: 60vw;
 }
@@ -365,10 +327,10 @@ ul {
 }
 
 .accordion-title {
-display: flex;
-justify-content: space-between;
-align-items: flex-start;
-align-self: stretch;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
 }
 
 .accordion-content {
@@ -430,8 +392,6 @@ align-self: stretch;
     align-self: stretch;
     flex-wrap: wrap;
 }
-
-
 
 /* card styling */
 
@@ -597,8 +557,6 @@ align-self: stretch;
     padding-left: 25px;
 }
 
-
-
 footer {
     display: flex;
     padding: 34px 96px;
@@ -734,4 +692,3 @@ footer {
         max-width:300px !important;
     }
 }
-
