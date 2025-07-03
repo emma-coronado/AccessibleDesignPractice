@@ -13,7 +13,7 @@ async function addCards() {
                         <div class="card-body light">
                             <h3 class="h4">${element.title}</h3>
                             <p>${element.description}</p>
-                            <a href="${element.link}">Link to learn more about tool →</a>
+                            <a href="${element.link}" title="${element.linkDesc}">Link to learn more about tool →</a>
                         </div>
                     </div>`;
     });

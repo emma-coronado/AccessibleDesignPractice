@@ -500,15 +500,15 @@ footer {
     }
 
     .photo-text {
-        width: 63vw;
-        margin: 24px auto;
+        width: var(--Section-Width);
+        margin: 32px auto;
         text-align: center;
     }
 
     /* about section */
 
     #about-body {
-        width: 63vw;
+        margin: 0 var(--Side-Margin);
     }
 
     #row1 {
