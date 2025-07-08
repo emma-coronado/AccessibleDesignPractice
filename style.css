@@ -573,6 +573,7 @@ footer {
 
     .nav-item:hover, .nav-link:hover {
         background-color: var(--Brand-Colors-Button-Hover-BG);
+        color: var(--Brand-Colors-Dark-Blue);
         border-bottom: none !important;
     }
 
