@@ -28,6 +28,27 @@ window.onscroll = () => {
     }
 }; 
 
+// Responsive navbar functionality
+document.addEventListener('DOMContentLoaded', function () {
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.querySelector('.nav-link-group');
+    const menuIcon = menuToggle.querySelector('svg path');
+
+    menuToggle.addEventListener('click', function () {
+        const isExpanded = this.getAttribute('aria-expanded') === 'true';
+        this.setAttribute('aria-expanded', String(!isExpanded));
+        navLinks.style.display = isExpanded ? 'none' : 'flex';
+
+        // Toggle the icon between hamburger and "X"
+        menuIcon.setAttribute(
+            'd',
+            isExpanded
+                ? 'M3 6h18M3 12h18M3 18h18' // Hamburger icon
+                : 'M4.5 4.5L19.5 19.5M4.5 19.5L19.5 4.5' // "X" icon
+        );
+    });
+});
+
 // accordion functionality
 document.addEventListener('DOMContentLoaded', function () {
     const buttons = document.querySelectorAll('.accordion-button');
@@ -51,33 +72,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
             if (isExpanded) {
                 panel.style.display = 'none'; //expand panel
-                chevron[0].setAttribute('transform', 'scale(1, 1)'); // flip chevron
+                chevron[0].setAttribute('transform', 'rotate(0 0 0)'); // flip chevron
             }
             else {
                 panel.style.display = 'flex';
-                chevron[0].setAttribute('transform', 'scale(1, -1)');
+                chevron[0].setAttribute('transform', 'rotate(180 0 0)');
             }
         });
-    });
-});
-
-// Responsive navbar functionality
-document.addEventListener('DOMContentLoaded', function () {
-    const menuToggle = document.getElementById('menu-toggle');
-    const navLinks = document.querySelector('.nav-link-group');
-    const menuIcon = menuToggle.querySelector('svg path');
-
-    menuToggle.addEventListener('click', function () {
-        const isExpanded = this.getAttribute('aria-expanded') === 'true';
-        this.setAttribute('aria-expanded', String(!isExpanded));
-        navLinks.style.display = isExpanded ? 'none' : 'flex';
-
-        // Toggle the icon between hamburger and "X"
-        menuIcon.setAttribute(
-            'd',
-            isExpanded
-                ? 'M3 6h18M3 12h18M3 18h18' // Hamburger icon
-                : 'M4.5 4.5L19.5 19.5M4.5 19.5L19.5 4.5' // "X" icon
-        );
     });
 });
